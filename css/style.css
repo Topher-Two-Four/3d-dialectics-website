@@ -31,8 +31,8 @@ textarea {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
-    --BGCOLOR-FADE: rgb(252, 220, 160);
-    --BGCOLOR: orange;
+    --BGCOLOR-FADE: rgb(20, 20, 20);
+    --BGCOLOR: #000;
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
     --BORDER-COLOR: #333;
@@ -72,7 +72,7 @@ textarea {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --BGCOLOR-FADE: gray;
+        --BGCOLOR-FADE: rgb(20, 20, 20);
         --BGCOLOR: #000;
         --BODY-BGCOLOR: #333;
         --BORDER-COLOR: whitesmoke;
@@ -195,6 +195,9 @@ h4 {
     font-size: 20px;
     font-weight: lighter;
     text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.2rem;
 }
 
 p {
