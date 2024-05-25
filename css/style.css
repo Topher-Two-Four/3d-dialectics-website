@@ -64,7 +64,7 @@ textarea {
     /* STANDARD PADDING */
     --PADDING-TB: 0.2em;
     --PADDING-SIDE: 2.5%;
-    --PADDING-HEADER-TB: 0.2em;
+    --PADDING-HEADER-TB: 0em;
 
     /* STANDARD MARGIN */
     --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
@@ -172,7 +172,7 @@ h4 {
 h1 {
     font-size: 28px;
     color: var(--HEADER-COLOR);
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 h2
@@ -622,6 +622,7 @@ tr {
 
 .flextext__content p {
     font-size: 16px;
+    margin: 0.5em;
 }
 
 .fleximage__content img {
@@ -725,8 +726,8 @@ tr {
 
 .contactimage img {
     width: 340px;
-    border: thick ridge var(--BORDER2-COLOR);
-    margin: 2em auto;
+    margin: 1em auto;
+    padding-right: 1rem;
 }
 
 .messagebutton {
