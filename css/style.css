@@ -31,15 +31,15 @@ textarea {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
-    --BGCOLOR-FADE: rgb(20, 20, 20);
-    --BGCOLOR: #000;
+    --BGCOLOR-FADE: rgb(0, 0, 0);
+    --BGCOLOR: rgb(0, 0, 0);
     --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
     --BODY-BGCOLOR: #FFF;
     --BORDER-COLOR: #333;
     --BUTTON-COLOR: #FFF;
     --FONT-COLOR: #000;
     --HEADER-BGCOLOR:#0c0fba;
-    --HEADER-COLOR: rgb(255, 162, 0);
+    --HEADER-COLOR: #FFFD00;
     --HERO-BGCOLOR: #1b0cba;
     --HERO-COLOR: #ffffff;
     --HIGHLIGHT-COLOR: rgb(51, 178, 51);
@@ -50,21 +50,21 @@ textarea {
 
     --HOMENAV-BGCOLOR: gray ;
     --FESTIVALNAV-BGCOLOR: #ffc600;
-    --PORTFOLIONAV-BGCOLOR: #dc8400;
+    --PORTFOLIONAV-BGCOLOR: #4E4080;
     --GETTINGHERENAV-BGCOLOR: #c05131;
     --ATTENDINGNAV-BGCOLOR: #8a387c;
     --PRESSNAV-BGCOLOR: #ed8b00;
 
-    --BORDER2-COLOR: #1b0cba;
+    --BORDER2-COLOR: #FFC100;
 
     /* BORDERS */
     --BORDERS: 1px solid var(--BORDER-COLOR);
     --BORDER-RADIUS: 15px;
 
     /* STANDARD PADDING */
-    --PADDING-TB: 0.25em;
+    --PADDING-TB: 0.2em;
     --PADDING-SIDE: 2.5%;
-    --PADDING-HEADER-TB: 0.4em;
+    --PADDING-HEADER-TB: 0.2em;
 
     /* STANDARD MARGIN */
     --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
@@ -72,26 +72,26 @@ textarea {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --BGCOLOR-FADE: rgb(20, 20, 20);
-        --BGCOLOR: #000;
-        --BODY-BGCOLOR: #333;
+        --BGCOLOR-FADE: #000000;
+        --BGCOLOR: #000000;
+        --BODY-BGCOLOR: #090D18;
         --BORDER-COLOR: whitesmoke;
         --BUTTON-COLOR: #000;
-        --FONT-COLOR:  whitesmoke;
-        --HEADER-COLOR: rgb(255, 162, 0);
-        --HEADER2-COLOR: rgb(255, 255, 255);
-        --HEADER3-COLOR: rgb(228, 191, 122);
-        --HEADER4-COLOR: rgb(228, 191, 122);
+        --FONT-COLOR: #E4E1F2;
+        --HEADER-COLOR: #FFFD00;
+        --HEADER2-COLOR: #2400FF;
+        --HEADER3-COLOR: #FFC001;
+        --HEADER4-COLOR: #494080;
         --HERO-COLOR: #rgb(228, 191, 122);
         --HIGHLIGHT-COLOR: rgb(245, 245, 245);
         --LINK-ACTIVE: rgb(252, 200, 103);
-        --LINK-COLOR: rgb(0, 0, 191);
+        --LINK-COLOR: #FFC100;
         --LINK-HOVER: orange;
         --NAV-BGCOLOR: rgb(20, 20, 20);
 
         --HOMENAV-BGCOLOR: gray ;
         --FESTIVALNAV-BGCOLOR: #ffc600;
-        --PORTFOLIONAV-BGCOLOR:  #dc8400;
+        --PORTFOLIONAV-BGCOLOR:  #4E4080;
         --GETTINGHERENAV-BGCOLOR: #c05131;
         --ATTENDINGNAV-BGCOLOR: #8a387c;
         --PRESSNAV-BGCOLOR: #ed8b00;
@@ -161,23 +161,23 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: var(--FF-HEADINGS);
     letter-spacing: 0.1em;
     text-align: center;
-    line-height: 1rem;
+    line-height: 1.4rem;
 }
 
 h1 {
-    margin-top: 1em;
     font-size: 28px;
     color: var(--HEADER-COLOR);
+    padding: 0.5rem;
 }
 
 h2
 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    padding: 0.5rem;
     font-size: 24px;
     color: var(--HEADER2-COLOR);
 }
@@ -185,19 +185,26 @@ h2
 h3 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    margin-bottom: 1em;
+    margin: 0.5rem;
     color: var(--HEADER3-COLOR);
     font-size: 22px;
 }
 
 h4 {
-    margin-bottom: 0.5em;
-    font-size: 20px;
-    font-weight: lighter;
+    margin: 0.5em;
+    font-size: 18px;
+    font-weight: bolder;
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    line-height: 1.2rem;
+    padding: 0.5rem
+}
+
+h5 {
+    padding: 0.5rem;
+    margin = 0.5em;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: var(--FF-HEADINGS);
+    text-align: center;
 }
 
 p {
@@ -208,6 +215,7 @@ p {
 
 a:any-link {
     color: var(--LINK-COLOR);
+    line-height: 1.5rem;
 }
 
 hr {
@@ -222,6 +230,11 @@ a:focus-visible {
 
 a:active {
     color: var(--LINK-ACTIVE);
+}
+
+img {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /* || HEADER/NAVIGATION  */
@@ -245,6 +258,7 @@ a:active {
 .header__nav {
     background-color: var(--NAV-BGCOLOR);
     font-weight: bold;
+    margin-bottom: .2em;
 }
 
 .header__homenav {
@@ -530,14 +544,14 @@ tr {
     width: 100%;
     text-align: center;
     padding: 0;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     font-size: 32px;
 }
 
 .contentbody__h3 {
     width: 100%;
     padding: 0;
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     font-size: 24px;
 }
 
@@ -549,7 +563,7 @@ tr {
 .container__p {}
 
 .container ul {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .container__returnlink {
@@ -576,10 +590,12 @@ tr {
     text-decoration: underline;
     padding-left: 1rem;
     color: var(--HEADER-COLOR);
+    line-height: 1.5rem;
 }
 
 .flextext__content h2 {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.5rem;
     text-align: center;
     font-weight: bold;
     text-shadow: #000;
@@ -587,25 +603,25 @@ tr {
 }
 
 .flextext__content h3 {
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
-    padding-top: 1rem;
     font-weight: bold;
     text-shadow: #000;
     color: var(--HEADER3-COLOR);
+    line-height: 1.5rem;
+    padding-top: 0.5rem;
 }
 
 .flextext__content ul {
-    margin: 1em;
-    font-size: 18px;
+    font-size: 16px;
     list-style-type: square;
-    line-height: 1rem;
-    padding-top: 0;
+    line-height: 1.5rem;
+    padding-top: 0.5rem;
     font-style: normal;
 }
 
 .flextext__content p {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .fleximage__content img {
@@ -646,7 +662,16 @@ tr {
     font-style: oblique;
     text-align: center;
     font-weight: lighter;
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.fleximage__poster h2 {
+    font-family: var(--FF-HEADINGS);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0.5em;
 }
 
 .fleximagebar__container {
@@ -699,7 +724,48 @@ tr {
 }
 
 .contactimage img {
-    width: 560px;
+    width: 340px;
     border: thick ridge var(--BORDER2-COLOR);
-    margin-bottom: 0.2rem;
+    margin: 2em auto;
 }
+
+.messagebutton {
+    background-color: blue;
+}
+
+.accordion {
+    background-color: rgb(153, 236, 185);
+    color: #444;
+    cursor: pointer;
+    padding: 0.2rem;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: var(--HEADER3-COLOR);
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: var(--HEADER4-COLOR);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
