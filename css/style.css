@@ -237,6 +237,10 @@ img {
     margin-bottom: 0.5em;
 }
 
+ol {
+    margin: 2em;
+}
+
 /* || HEADER/NAVIGATION  */
 
 .header {
