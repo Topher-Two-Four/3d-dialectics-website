@@ -686,9 +686,9 @@ tr {
 }
 
 .fleximagebar__container img {
-    padding-left: 2.5rem;
+    padding-left: 5rem;
     padding-right: 1rem;
-    width: 40vh;
+    height: 200px;
 }
 
 .flexsocialmediabar__container {
