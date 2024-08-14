@@ -157,7 +157,7 @@ h4 {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 32px;
     color: var(--HEADER-COLOR);
     padding: 1rem;
     line-height: 2rem;
@@ -175,7 +175,7 @@ h3 {
     padding-right: 0.5rem;
     margin: 0.5rem;
     color: var(--HEADER3-COLOR);
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h4 {
@@ -244,13 +244,13 @@ ol {
     background-color: var(--HEADER-BGCOLOR);
     color: var(--HEADER-COLOR);
     padding: var(--PADDING-HEADER-TB) var(--PADDING-SIDE);
-    font-size: 32px;
+    font-size: 36px;
 }
 
 .header__nav {
     background-color: var(--NAV-BGCOLOR);
     font-weight: bold;
-    margin-bottom: .2em;
+    padding: 0 var(--PADDING-SIDE) var(--PADDING-TB) var(--PADDING-SIDE);
 }
 
 .header__homenav {
@@ -278,7 +278,7 @@ ol {
 }
 
 .header__ul {
-    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    padding: 0 var(--PADDING-SIDE) var(--PADDING-TB) var(--PADDING-SIDE);
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
