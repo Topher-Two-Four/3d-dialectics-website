@@ -38,7 +38,7 @@ textarea {
     --BORDER-COLOR: #333;
     --BUTTON-COLOR: #FFF;
     --FONT-COLOR: #000;
-    --HEADER-BGCOLOR:#0c0fba;
+    --HEADER-BGCOLOR:#020659;
     --HEADER-COLOR: #FFFD00;
     --HERO-BGCOLOR: #1b0cba;
     --HERO-COLOR: #ffffff;
@@ -47,14 +47,7 @@ textarea {
     --LINK-COLOR: #000;
     --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
     --NAV-BGCOLOR: #FFF;
-
-    --HOMENAV-BGCOLOR: gray ;
-    --FESTIVALNAV-BGCOLOR: #ffc600;
-    --PORTFOLIONAV-BGCOLOR: #4E4080;
-    --GETTINGHERENAV-BGCOLOR: #c05131;
-    --ATTENDINGNAV-BGCOLOR: #8a387c;
-    --PRESSNAV-BGCOLOR: #ed8b00;
-
+    
     --BORDER2-COLOR: #FFC100;
 
     /* BORDERS */
@@ -72,14 +65,14 @@ textarea {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --BGCOLOR-FADE: #000000;
+        --BGCOLOR-FADE: #F2E205;
         --BGCOLOR: #000000;
-        --BODY-BGCOLOR: #090D18;
+        --BODY-BGCOLOR: #1a1a1a;
         --BORDER-COLOR: whitesmoke;
         --BUTTON-COLOR: #000;
         --FONT-COLOR: #E4E1F2;
-        --HEADER-COLOR: #FFFD00;
-        --HEADER2-COLOR: #2400FF;
+        --HEADER-COLOR: #eeff00;
+        --HEADER2-COLOR: #2405F2;
         --HEADER3-COLOR: #FFC001;
         --HEADER4-COLOR: #494080;
         --HERO-COLOR: #rgb(228, 191, 122);
@@ -87,14 +80,8 @@ textarea {
         --LINK-ACTIVE: rgb(252, 200, 103);
         --LINK-COLOR: #FFC100;
         --LINK-HOVER: orange;
-        --NAV-BGCOLOR: rgb(20, 20, 20);
+        --NAV-BGCOLOR: #020659;
 
-        --HOMENAV-BGCOLOR: gray ;
-        --FESTIVALNAV-BGCOLOR: #ffc600;
-        --PORTFOLIONAV-BGCOLOR:  #4E4080;
-        --GETTINGHERENAV-BGCOLOR: #c05131;
-        --ATTENDINGNAV-BGCOLOR: #8a387c;
-        --PRESSNAV-BGCOLOR: #ed8b00;
     }
 }
 
