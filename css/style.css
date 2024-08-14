@@ -31,23 +31,22 @@ textarea {
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
-    --BGCOLOR-FADE: rgb(0, 0, 0);
-    --BGCOLOR: rgb(0, 0, 0);
-    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
-    --BODY-BGCOLOR: #FFF;
-    --BORDER-COLOR: #333;
-    --BUTTON-COLOR: #FFF;
-    --FONT-COLOR: #000;
-    --HEADER-BGCOLOR:#020659;
-    --HEADER-COLOR: #FFFD00;
-    --HERO-BGCOLOR: #1b0cba;
-    --HERO-COLOR: #ffffff;
-    --HIGHLIGHT-COLOR: rgb(51, 178, 51);
-    --LINK-ACTIVE: orange;
-    --LINK-COLOR: #000;
-    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-    --NAV-BGCOLOR: #FFF;
-    
+    --BGCOLOR-FADE: #F2E205;
+    --BGCOLOR: #000000;
+    --BODY-BGCOLOR: #1a1a1a;
+    --BORDER-COLOR: whitesmoke;
+    --BUTTON-COLOR: #000;
+    --FONT-COLOR: #E4E1F2;
+    --HEADER-COLOR: #eeff00;
+    --HEADER2-COLOR: #2405F2;
+    --HEADER3-COLOR: #FFC001;
+    --HEADER4-COLOR: #494080;
+    --HERO-COLOR: #rgb(228, 191, 122);
+    --HIGHLIGHT-COLOR: rgb(245, 245, 245);
+    --LINK-ACTIVE: rgb(252, 200, 103);
+    --LINK-COLOR: #FFC100;
+    --LINK-HOVER: orange;
+    --NAV-BGCOLOR: #020659;
     --BORDER2-COLOR: #FFC100;
 
     /* BORDERS */
@@ -81,7 +80,7 @@ textarea {
         --LINK-COLOR: #FFC100;
         --LINK-HOVER: orange;
         --NAV-BGCOLOR: #020659;
-
+        --BORDER2-COLOR: #FFC100;
     }
 }
 
