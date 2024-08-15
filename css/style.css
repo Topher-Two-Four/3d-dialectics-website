@@ -344,7 +344,7 @@ ol {
 
 .footer {
     bottom: 0;
-    background-color: var(--HEADER-BGCOLOR);
+    background-color: var(--NAV-BGCOLOR);
     color: var(--HEADER-COLOR2);
     padding: var(--PADDING-TB) var(--PADDING-SIDE);
     text-align: center;
