@@ -48,9 +48,9 @@
         </nav>
     </header>
     <main class="main">
-        <h1 id="Canvases" class="underline">Canvases</h1>
-        <h4>Buy handcrafted canvases from a local UNM art school graduate!</h4>
-        <h5><i>***Profit partially goes towards funding local, student internships!***</i></h5>
+        <h1 id="Canvases" class="underline">Purchase Canvases</h1>
+        <h6>Buy handcrafted canvases from a local UNM art school graduate!</h6>
+        <h3>**Profit partially goes towards funding local, student internships**</h3>
         <div class="fleximagebar__container">
           <div id='product-component-1724630270071'></div>
 <script type="text/javascript">
@@ -576,6 +576,137 @@
 })();
 /*]]>*/
 </script>
+<div id='product-component-1731340142985'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: '469c9a-81.myshopify.com',
+      storefrontAccessToken: 'c45125ec5c3b03501164cb98f01d4fd3',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '8172684837041',
+        node: document.getElementById('product-component-1731340142985'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#0036a4"
+        },
+        "background-color": "#003cb6",
+        ":focus": {
+          "background-color": "#0036a4"
+        }
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        ":hover": {
+          "background-color": "#0036a4"
+        },
+        "background-color": "#003cb6",
+        ":focus": {
+          "background-color": "#0036a4"
+        }
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        ":hover": {
+          "background-color": "#0036a4"
+        },
+        "background-color": "#003cb6",
+        ":focus": {
+          "background-color": "#0036a4"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#003cb6",
+        ":hover": {
+          "background-color": "#0036a4"
+        },
+        ":focus": {
+          "background-color": "#0036a4"
+        }
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
 <div id='product-component-1724630122683'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
@@ -839,6 +970,12 @@
 /*]]>*/
 </script>
         </div>
+        <h2>We sell gallery-wrapped artist's canvases to students!</h2>
+        <h4>Handcrafted by local UNM art school graduate</h4>
+        <h4>Made with select quality wood</h4>
+        <h4>15oz. Heavy duck canvas</h4>
+        <h4>Professional-level acrylic gesso</h4>
+        <h4>Fast, friendly service :)</h4>
         <h2>Um...Why is a Game Studio Selling Canvases?</h2>
         <p>&ensp;&ensp;
             I'm glad you asked! I'm a local UNM graduate, with an extensive background in the analog and digital arts. I have training in mechanical engineering processes through UNM, and I hold an A.S. in Physics from CNM. I utilize this amalgamation of knowledge to make an honest living for myself and my family by constructing and selling canvases. I do this while building the game studio that is ultimate the purpose of our organization. In addition, I put 10% of the profit made towards hiring interns from UNM and CNM to game projects, for which which they will receive learning opportunities, industry credit, and a small stipend.
